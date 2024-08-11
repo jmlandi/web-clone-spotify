@@ -3,9 +3,9 @@ import { Play, Shuffle, SkipBack, SkipForward, Mic, LayoutList, Laptop2, Volume,
 
 export default function Footer() {
     return (
-        <footer className="bg-zinc-900 border-zinc-700 px-4 py-4 flex items-center justify-between">
-        <div className="flex items-center gap-2">
-          <img src="/cover.jpg" width={60} height={60} alt="Album cover of Alice In Chains: Facelift"></img>
+        <footer className="bg-zinc-900 border-zinc-700 px-4 py-4 flex items-center justify-between fixed w-screen bottom-0">
+        <div className="flex items-center gap-2 invisible md:visible">
+          <img src="/alice-in-chains.jpg" width={60} height={60} alt="Album cover of Alice In Chains: Facelift"></img>
           <div className="flex flex-col">
             <strong className="font-normal">Man In The Box</strong>
             <span className="text-xs text-zinc-400">Alice In Chains</span>
@@ -30,7 +30,7 @@ export default function Footer() {
             <span className="text-xs text-zinc-400">3:30</span>
           </div>
         </div>
-        <div className="flex items-center gap-2">
+        <div className="flex items-center gap-2 invisible md:visible">
           <Mic size={16} className="text-zinc-400" />
           <LayoutList size={16} className="text-zinc-400" />
           <Laptop2 size={16} className="text-zinc-400" />
